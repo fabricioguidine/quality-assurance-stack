@@ -1,0 +1,133 @@
+# Roles in QA Teams
+
+In modern software development, **Quality Assurance (QA)** teams play a critical role in ensuring that products meet high standards of functionality, usability, performance, and security. A well-structured QA team consists of various specialized roles that work collaboratively to ensure software quality across the entire development lifecycle.
+
+---
+
+## 🧩 Key Roles in QA Teams
+
+### 1. **QA Analyst / Test Analyst**
+
+**Primary Focus:** Requirement analysis, test planning, test case design
+
+#### Responsibilities:
+- Analyze requirements and specifications for testability
+- Design and document test scenarios and test cases
+- Execute manual test cases and log defects
+- Report on test results and coverage
+
+---
+
+### 2. **QA Engineer / Test Engineer**
+
+**Primary Focus:** Test execution and defect identification
+
+#### Responsibilities:
+- Conduct various types of testing (functional, regression, smoke, etc.)
+- Identify, document, and verify bugs
+- Perform test data setup and environment validation
+- Collaborate with developers to clarify issues
+
+---
+
+### 3. **Automation Test Engineer**
+
+**Primary Focus:** Automating repetitive testing tasks
+
+#### Responsibilities:
+- Design and maintain automated test scripts
+- Use automation tools (e.g., Selenium, Cypress, Playwright)
+- Integrate tests into CI/CD pipelines
+- Analyze test failures and update scripts accordingly
+
+---
+
+### 4. **Performance Test Engineer**
+
+**Primary Focus:** Application scalability, speed, and responsiveness
+
+#### Responsibilities:
+- Create and execute performance/load/stress tests
+- Use tools like JMeter, LoadRunner, or Gatling
+- Analyze bottlenecks and report performance issues
+- Provide tuning and optimization recommendations
+
+---
+
+### 5. **QA Lead / Test Lead**
+
+**Primary Focus:** Team leadership, strategy, and planning
+
+#### Responsibilities:
+- Define test strategies and resource planning
+- Assign tasks and mentor QA team members
+- Coordinate with PMs, developers, and stakeholders
+- Ensure deliverables align with quality standards
+
+---
+
+### 6. **QA Manager**
+
+**Primary Focus:** QA process ownership and cross-team coordination
+
+#### Responsibilities:
+- Define and maintain QA processes and policies
+- Oversee multiple QA projects and ensure consistency
+- Allocate resources and manage timelines
+- Report QA metrics to senior leadership
+
+---
+
+### 7. **Test Architect**
+
+**Primary Focus:** Frameworks and tool selection, test architecture design
+
+#### Responsibilities:
+- Design scalable and maintainable test automation frameworks
+- Evaluate and recommend testing tools and technologies
+- Collaborate with DevOps and development teams on integration
+- Guide automation strategy across teams
+
+---
+
+### 8. **SDET (Software Development Engineer in Test)**
+
+**Primary Focus:** Developer-level QA support
+
+#### Responsibilities:
+- Write unit and integration tests in code
+- Build testable software architecture
+- Develop test utilities and automation infrastructure
+- Collaborate closely with developers in agile teams
+
+---
+
+## 🔄 Supporting & Cross-functional Roles
+
+- **DevOps Engineer:** Assists with CI/CD, environment provisioning, and test integration  
+- **Product Owner / Business Analyst:** Provides requirement clarity for test planning  
+- **Security Tester:** Ensures compliance with security standards and performs vulnerability assessments  
+
+---
+
+## 📊 Role Responsibility Matrix (RACI-style Summary)
+
+| Role                    | Test Design | Manual Testing | Automation | Leadership | Strategy |
+|-------------------------|-------------|----------------|------------|------------|----------|
+| QA Analyst              | ✅           | ✅              | ❌         | ❌          | ❌        |
+| QA Engineer             | ✅           | ✅              | ✅ (basic) | ❌          | ❌        |
+| Automation Engineer     | ✅ (scripts) | ❌              | ✅✅        | ❌          | ❌        |
+| Performance Engineer    | ❌           | ❌              | ✅ (load)  | ❌          | ✅        |
+| QA Lead                 | ✅           | ✅              | ✅         | ✅          | ✅        |
+| QA Manager              | ❌           | ❌              | ❌         | ✅✅        | ✅✅      |
+| Test Architect          | ✅✅         | ❌              | ✅✅        | ✅          | ✅✅      |
+| SDET                    | ✅✅         | ❌              | ✅✅        | ❌          | ✅        |
+
+---
+
+## 🧠 Key Takeaways
+
+- **QA teams are multi-disciplinary**, combining analytical, technical, and strategic skills.
+- A **balanced team** ensures thorough test coverage—manual, automated, and performance-based.
+- Clear **role definitions** lead to better accountability, collaboration, and efficiency.
+- Roles may overlap in agile teams, but **specialization enhances depth and expertise**.
