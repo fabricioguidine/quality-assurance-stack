@@ -1,0 +1,122 @@
+# Test Pyramid
+
+The **Test Pyramid** is a conceptual model that guides software teams on how to **structure automated tests efficiently**. Introduced by Mike Cohn, it emphasizes having **more low-level, fast, and reliable tests** and **fewer high-level, slow, and brittle tests**.
+
+---
+
+## 🔺 What is the Test Pyramid?
+
+The pyramid is structured in three main layers:
+
+- **UI Tests (E2E)**  
+  - Few in number  
+  - Slow and brittle  
+  - Test user journeys
+
+- **API / Integration Tests**  
+  - Moderate number  
+  - Validate interactions between services/modules
+
+- **Unit Tests**  
+  - Most numerous  
+  - Fast and isolated  
+  - Validate individual functions
+
+---
+
+## 🧱 1. Unit Tests – Base Layer
+
+**Objective:** Validate individual functions or components in isolation.
+
+- **Written by:** Developers  
+- **Tools:** JUnit, NUnit, Jest, Mocha, pytest
+
+✅ **Traits:**
+- Very fast
+- No dependencies
+- High coverage
+- Ideal for CI/CD
+
+---
+
+## 🔄 2. Integration / API Tests – Middle Layer
+
+**Objective:** Test interactions between modules, services, or external systems.
+
+- **Written by:** Developers or Test Engineers  
+- **Tools:** REST Assured, Postman, SuperTest, TestNG
+
+✅ **Traits:**
+- Test data flow and service logic
+- Slower than unit tests
+- Detects issues between systems
+
+---
+
+## 🎨 3. UI / End-to-End (E2E) Tests – Top Layer
+
+**Objective:** Validate full user journeys through the UI.
+
+- **Written by:** QA Engineers, Automation Engineers  
+- **Tools:** Selenium, Cypress, Playwright
+
+✅ **Traits:**
+- High business value
+- Slowest and most fragile
+- Focus on critical user paths
+
+---
+
+## ✅ Why Follow the Test Pyramid?
+
+| Benefit             | Description                                               |
+|---------------------|-----------------------------------------------------------|
+| Speed               | Lower layers run fast, enabling rapid feedback            |
+| Stability           | Unit/API tests are less flaky than UI tests               |
+| Cost-efficiency     | Lower-level tests are cheaper to write and maintain       |
+| CI/CD Readiness     | Designed for modern pipelines and fast releases           |
+
+---
+
+## ❌ Anti-Pattern: Inverted Pyramid
+
+An unhealthy test strategy might look like this:
+
+- 70% UI Tests → Slow, flaky  
+- 20% API Tests  
+- 10% Unit Tests → Minimal coverage  
+
+**Consequences:**
+- Long test runs
+- Frequent failures
+- Maintenance nightmares
+- Poor developer feedback loop
+
+---
+
+## ⚙️ Suggested Test Distribution
+
+| Test Layer  | Recommended Coverage |
+|-------------|----------------------|
+| Unit Tests  | 60–80%               |
+| API Tests   | 15–30%               |
+| UI Tests    | 5–10%                |
+
+> ⚠️ Adjust based on project complexity and domain risk.
+
+---
+
+## 🧠 Best Practices
+
+- Prioritize **unit and service-level testing**
+- Keep UI tests **lean and meaningful**
+- Continuously monitor test reliability and duration
+- Integrate tests into your CI/CD pipeline
+
+---
+
+## 📌 Conclusion
+
+The **Test Pyramid** helps teams build reliable, scalable, and fast test suites. Following its structure ensures **efficient coverage**, **quick feedback**, and **high confidence** in your product quality.
+
+> Test smart. Automate strategically. Ship with confidence.
